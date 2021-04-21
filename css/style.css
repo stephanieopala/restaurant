@@ -1,0 +1,122 @@
+:root {
+  --primary-color:rgb(26, 134, 26);
+  --body-color:rgb(34, 31, 31);
+  --font-color:whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--body-color);
+  color: var(--font-color);
+  padding: 30px 80px;
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+/*NAVIGATION*/
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo {
+  font-size: 1.2rem;
+}
+
+span {
+  color: var(--primary-color);
+  font-family: 'Pacifico', cursive;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav__item {
+  list-style: none;
+  margin-right: 1rem;
+  font-size: 1.2rem;
+}
+
+.nav__link {
+  color: var(--font-color);
+  text-decoration: none;
+}
+
+/*HOMEPAGE*/
+.home {
+  width: 100%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.home__desc {
+  padding: 150px 20px 0px 20px;
+}
+
+.home__desc p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.home__btn {
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  padding: 10px 20px;
+  border: 1px solid var(--primary-color);
+  margin-right: 20px;
+  font-size: 1.2rem;
+}
+
+.home__btn:hover {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+}
+
+.home__img {
+  animation: home 2s linear reverse;
+}
+
+@-webkit-keyframes home {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+}
+
+@keyframes home {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(200px);
+            transform: translateX(200px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
