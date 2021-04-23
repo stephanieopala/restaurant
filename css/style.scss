@@ -21,9 +21,11 @@ header {
 
 }
 
+
 /*NAVIGATION*/
 .container {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,6 +117,49 @@ span {
          
 }
 
+/*MENU*/
+.menu {
+    margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+    padding: 0 30px;
+    &__title {
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 2rem;
+    }
+}
+.breakfast, .lunch {
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+}
+.breakfast__title, .lunch__title {
+    border-bottom: 1px solid var(--primary-color);
+}
+.breakfast__desc {
+    margin-right: 100px;
+}
+.breakfast__img {
+    width: 340px;
+    animation: slideInFromRight 1s ease-in;
+
+}
+.breakfast__img img {
+    width: 100%;
+}
+.lunch__desc {
+    padding: 0 60px;
+}
+.lunch__img {
+    width: 340px;
+    animation: slideInFromLeft 1s ease-in;
+
+}
+.lunch__img img {
+    width: 100%;
+}
+/*KEYFRAMES*/
 @keyframes slideInFromRight{
     0%{transform: translateX(100%);}
     100%{transform: translateX(0);}
@@ -123,13 +168,6 @@ span {
 @keyframes slideInFromLeft{
     0%{transform: translateX(-100%);}
     100%{transform: translateX(0);}
-}
-
-/*MENU*/
-.menu {
-    
-    width: 100%;
-    height: 100vh;
 }
 
 @media only screen and (max-width:768px) {
@@ -162,6 +200,18 @@ span {
     }
 
     /*HOMEPAGE*/
-    
+    /*MENU*/
+    .menu {
+        padding: 0 10px;
+    }
+    .lunch, .breakfast {
+        flex-direction: column ;
+    }
+    .breakfast__desc {
+        margin-right: 0;
+    }
+    .lunch__desc {
+        padding: 0;
+    }
 
 }
