@@ -119,19 +119,21 @@ span {
 
 /*MENU*/
 .menu {
-    margin-top: 2rem;
+    margin-top: 100px;
     width: 100%;
-    height: 100vh;
     padding: 0 30px;
     &__title {
         color: var(--primary-color);
         text-align: center;
         font-size: 2rem;
+        margin-bottom: 100px;
     }
+}
+.breakfast {
+    margin-bottom: 100px;
 }
 .breakfast, .lunch {
     display: flex;
-    padding: 30px 0px;
     justify-content: center;
 }
 .breakfast__title, .lunch__title {
@@ -154,11 +156,64 @@ span {
 .lunch__img {
     width: 340px;
     animation: slideInFromLeft 1s ease-in;
-
+    height: 400px;
 }
 .lunch__img img {
     width: 100%;
+    height: 100%;
 }
+
+/*TESTIMONIALS*/
+.testimonials {
+    margin-top: 100px;
+}
+.testimonials h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 2rem;
+}
+.card__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+.card {
+    width: 320px;
+    height: 360px;
+    background-color: #2D2828;
+    margin: 0 30px;
+    border: 1px solid #2D2828;
+    border-radius: 16px;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.card__heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+}
+.card__img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #2D2828;
+    border-radius: 50%;
+
+}
+.card__img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.card__title p {
+    color: var(--primary-color);
+}
+
 /*KEYFRAMES*/
 @keyframes slideInFromRight{
     0%{transform: translateX(100%);}
@@ -169,6 +224,73 @@ span {
     0%{transform: translateX(-100%);}
     100%{transform: translateX(0);}
 }
+
+/*CONTACT*/
+.contact {
+    width: 100%;
+    & h2 {
+        color: var(--primary-color);
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 100px;
+    }
+}
+#form {
+    width: 600px;
+    height: 600px;
+    background-color: #2D2828;
+    padding: 30px;
+    margin: 0 auto;
+}
+label {
+    font-weight: 600;
+}
+.required {
+    color: red;
+}
+input {
+    background-color: var(--font-color);
+}
+input[type=text], input[type=email] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    
+}
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    
+}
+.submit__btn {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+input[type=submit] {
+    padding: 5px 10px;
+    background-color: var(--primary-color);
+    color: var(--font-color);
+    border:1px solid var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+::placeholder {
+    font-size: 12px;
+    font-family: inherit;
+}
+
 
 @media only screen and (max-width:768px) {
     
