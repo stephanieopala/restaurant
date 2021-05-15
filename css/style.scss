@@ -301,7 +301,18 @@ input[type=submit] {
     background-color: #2D2828;
     color: var(--font-color);
     width: 400px;
-
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 30px 40px;
+}
+.contact__phone, .contact__email, .contact__address {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 @media only screen and (max-width:768px) {
